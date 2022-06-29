@@ -3,6 +3,8 @@ let nav = document.getElementById("one")
 let li = document.getElementById("tow")
 let li1 = document.getElementById("ol")
 let li2 = document.getElementById("lo")
+let form = document.querySelector('form')
+
 let burger = document.getElementById("two")
 burger.onclick = function(){
     nav.classList.toggle("active")
@@ -34,13 +36,7 @@ li2.onclick = function(){
 }
 
 
-
-
-
-// #################
-// form validateur
-
-
+// validateur form
 let one1 = document.getElementById("Nom")
 let two = document.getElementById("email")
 let three = document.getElementById("name")
@@ -126,13 +122,8 @@ five.addEventListener("keyup", function(){
 
 
 
-
-
-
-
-// // validate form
-// function validate(){
-    
+// validate form
+function validate(){
     if((one1.value.length == 0 || one1.value.length < 3)){
         let chek = document.getElementById("check")
         let exlama = document.getElementById("exlama")
@@ -141,7 +132,6 @@ five.addEventListener("keyup", function(){
         chek.style.display="none"
         return false
     }
-
     if(two.value.length == 0 || two.value.length < 3){
         let echek = document.getElementById("echeck")
         let eexlama = document.getElementById("eexlama")
@@ -150,7 +140,6 @@ five.addEventListener("keyup", function(){
         echek.style.display="none"
         return false
     }
-
     var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     if(!three.value.match(phoneno)){
         let echek = document.getElementById("tcheck")
@@ -160,7 +149,6 @@ five.addEventListener("keyup", function(){
         echek.style.display="none"
         return false
     }
-
     if(five.value.length == 0 || five.value.length < 8){
         let echek = document.getElementById("acheck")
         let eexlama = document.getElementById("aexlama")
@@ -169,15 +157,4 @@ five.addEventListener("keyup", function(){
         echek.style.display="none"
         return false
     }
-
-    else {
-        let cong = document.getElementById("congo")
-        let image = document.getElementById("image")
-        let body = document.body
-        form.remove()
-        image.remove()
-        body.style.cssText= "background-color: #EFEFEF"
-        cong.style.display="block"
-    }
-
-
+}

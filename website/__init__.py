@@ -1,8 +1,18 @@
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+
+
+
+db = SQLAlchemy()
+
+DB_NAME = "databasse.db"
 
 def create_app():
     app= Flask(__name__)
     app.config['SECREY8KEY']= ' hdadlknksdhiu x idnazzoijdzejknks'
+
+
 
     from .views import views
     from .auth import auth
@@ -11,4 +21,10 @@ def create_app():
     app.register_blueprint(auth,url_prefix='/')
 
 
+    
+
+
+
     return app
+
+

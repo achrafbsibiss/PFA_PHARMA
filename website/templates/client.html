@@ -6,7 +6,35 @@
 
 {%block body%}
 
-    <h1>hello evreyone</h1>
+<header>
+    <div class="Alllogo">
+        <span class="logo1"></span>
+        <h1 class="logo2">Pharma network</h1>
+    </div>
+    <ul class="nav-link" id="one">
+        <li id="tow"><a href="">Home</a></li>
+        <li id="ol"><a href="">Our Service</a></li>
+        <li id="lo"><a href="">Contact</a></li>
+    </ul>
+    <div class="burger" id="two">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</header>
+<!-- siction one -->
+<section class="one">
+    <h1>find open pharmacies  whenever  you want with one click</h1>
+    <img src="{{url_for('static',filename='image/mainn_img.png')}}" alt="">
+    <div class="un">
+        <div class="chose">
+            <a href="">Day</a>
+            <a href="">Night</a>
+        </div>
+        <p>Pharmacie de quartier</p>
+    </div>
+</section>
+<script src="{{url_for('static',filename='js/clientjs.js')}}"></script>
 
 {% endblock %}
 

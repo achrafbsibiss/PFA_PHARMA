@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/fb5de9f43c.js" crossorigin="anonymous"></script>
-    
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">     -->
 
 
     {%if custom_css%}
+
 
 
     
@@ -24,9 +25,22 @@
 </head>
 <body>
 
+
+  
+
+
+
   {%block body%}
+    
+    
+
 
   {%endblock%}
+
+  
+
+
+   <script src="{{url_for('static',filename='js/boostrap.min.js')}}"></script>
 
 
 </body>
