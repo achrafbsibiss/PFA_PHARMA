@@ -66,10 +66,27 @@ def pharmacie():
 
 
 
+
+@auth.route('/nigtpharmacie')
+def pharmacieInfo():
+    
+
+    return render_template("night.html",  custom_css="nightstyle") 
+
+
+
+
+
+
+
+
 @auth.route('/abouts_ass')
 def sing_up():
     return render_template("aboutas.html",
                             custom_css="aboutas")
+
+
+
 
 
 
@@ -81,8 +98,8 @@ def cont():
 
 @auth.route('/info')
 def info():
-    return render_template("maps_click.html",
-                            custom_css="maps_click")
+    return render_template("abouts.html",
+                            custom_css="info")
 
 
 

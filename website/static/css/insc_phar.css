@@ -350,7 +350,7 @@ form h1
 footer
 {
     width: 100%;
-    background-color: var(--maincolor);
+    background-color: #EFEFEF;
     color: var(--textcolor);
     padding: 20px 60px;
 }
@@ -368,6 +368,11 @@ footer h1
 {
     list-style: none;
     margin-bottom: 10px;
+}
+.tous ul li a
+{
+    text-decoration: none;
+    color: var(--textcolor);
 }
 footer p
 {
@@ -421,7 +426,6 @@ footer p
         align-items: center;
         flex-direction: column;
         display: none;
-        background-color: var(--maincolor);
     }
     .congo i
     {
@@ -430,7 +434,7 @@ footer p
         padding: 80px 80px;
         border-radius: 50%;
         font-size: 50px;
-        color:var(--backroundcolor);
+        color:var(--maincolor);
     }
     .congo h1
     {

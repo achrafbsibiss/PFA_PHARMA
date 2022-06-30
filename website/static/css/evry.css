@@ -505,13 +505,10 @@ header ul li a:hover::before
     padding: 85px 25px;
 }
 }
-/* fin styling section four */
-/* ################ */
-/* footer */
 footer
 {
     width: 100%;
-    background-color: var(--maincolor);
+    background-color: #EFEFEF;
     color: var(--textcolor);
     padding: 20px 60px;
 }
@@ -530,48 +527,84 @@ footer h1
     list-style: none;
     margin-bottom: 10px;
 }
+.tous ul li a
+{
+    text-decoration: none;
+    color: var(--textcolor);
+}
 footer p
 {
     text-align: center;
 }
 @media (max-width:700px) {
-.tous
-{
-    display: flex;
-    /* flex-direction: column; */
-    justify-content:space-between;
-    align-items: center;
-    margin: 10px 20px;
-}
-footer
-{
-    padding: 20px 20px;
-}
-.tous ul{
-    margin-bottom: 20px;
-}
+    .tous
+    {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content:space-between;
+        align-items: center;
+        margin: 10px 20px;
+    }
+    footer
+    {
+        padding: 20px 20px;
+    }
+    .tous ul{
+        margin-bottom: 20px;
+    }
+        
+    }
+    @media (max-width:500px) {
     
-}
-@media (max-width:500px) {
-
-footer h1
-{
-    margin-left: 10px;
-    font-size: 16px;
-}
-}
-@media (max-width:639px) {
-    .zizo h1
-{
-    font-size: 20px;
-}
-.thh2 h1
-{
-    font-size: 20px;
-}
-.thh2
-{
-    max-width: 200px;
-    margin: 10px auto;
-}
-}
+    footer h1
+    {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    }
+    @media (max-width:550px) {
+        .zizo h1
+    {
+        font-size: 20px;
+    }
+    .thh2 h1
+    {
+        font-size: 20px;
+    }
+    .thh2
+    {
+        max-width: 200px;
+        margin: 10px auto;
+    }
+    }
+    .congo
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
+    .congo i
+    {
+        margin-bottom: 20px;
+        border: 3px solid gray;
+        padding: 80px 80px;
+        border-radius: 50%;
+        font-size: 50px;
+        color:var(--maincolor);
+    }
+    .congo h1
+    {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0em;
+    }
+    .congo p
+    {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    }

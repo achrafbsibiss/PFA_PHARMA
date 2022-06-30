@@ -333,9 +333,116 @@ header ul li a:hover::before
         font-size: 22px;
     }
 }
-/* fin section two */
-/* fin styling section four */
-/* ################ */
+/* section three */
+.client
+{
+    margin: 100px 0px;
+    padding: 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+.pharma
+{
+    /* height: 438px; */
+    width: 580px;
+    margin: 20px auto;
+    border-radius: 0px;
+    border: 1px solid #30AE3F;
+    position: relative;
+    background-color: #f7f7f7;
+    color: #313233;
+    padding: 20px;
+}
+.pharma img
+{
+    width: 150px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+.pharma h1
+{
+    /* font-family: 'Poppins'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.pharma h2
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.pharma p
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 39px;
+    margin-bottom: 10px;
+    text-transform: capitalize
+}
+.pharma p span
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 39px;
+    color: #30AE3F;
+    margin-bottom: 10px;
+    text-transform: capitalize
+}
+.pharma h4
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 39px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    color: #30AE3F;
+}
+.pharma a
+{
+    color: #313233;
+}
+.pharma a:hover
+{
+    color: #30AE3F;
+}
+@media (max-width:611px) {
+    .pharma
+{
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    padding-left: 50px;
+}
+.pharma img
+{
+    width: 50px;
+} 
+.pharma h1
+{
+    font-size: 28px;
+}
+}
+@media (max-width:497px){
+
+    .pharma h1
+{
+    position: relative;
+    font-size: 22px;
+}
+}
+/* fin section three */
 /* footer */
 footer
 {
