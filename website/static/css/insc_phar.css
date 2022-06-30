@@ -17,6 +17,15 @@ body
      font-family: 'Poppins', sans-serif;
 }
 /* heaer */
+
+
+.erur{
+    background-color: #30AE3F;
+    color:#DBFFD8;
+}
+
+
+
 header
 {
     display: flex;

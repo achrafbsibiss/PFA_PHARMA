@@ -25,6 +25,45 @@
 
 </header>
 
+    {%with messages = get_flashed_messages(with_categories=True)%}
+
+        {%if messages%}
+                {%for category , massage in messaes %}
+
+                    {%if category == 'error' %}  
+                        <div class="erur" role="alert">
+
+                            {{message}}
+
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+
+                        </div >
+
+                    {%else%}
+
+                        <div class="alert alert-success alter-dismissale fade show" role="alert">
+
+                            {{message}}
+
+                            <button type="button" class="close" data-dismiss="alert">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+
+
+                        </div >
+                    {%endif%}
+
+                {%endfor%}
+
+        
+        {%endif%}
+
+    {%endwith%}
+
+
 
 <section>
 
@@ -33,8 +72,11 @@
                 <img src="{{url_for('static',filename='image/756.jpg')}}" alt="">
                 <h1> <a href="">pharmacie</a></h1>
             </div>
-            <form action=""  name ='registre-fom' id="form" onsubmit=" return validate()">
+
+            
+            <form action="/savedetails" method="POST" name ='registre-fom' id="form" onsubmit=" return validate()">
                 <h1>Veuillez Inscrire Votre Pharmacie</h1>
+
                 <div class="inp-form">
                     <label for="name">Nom de pharmacie</label>
                     <input type="text" id="Nom" name="name">
@@ -42,6 +84,7 @@
                     <span class="check" id="check"><i class="fa-solid fa-circle-check"></i></span>
                     <p class="erore" id="erore">Ce nom est dèja existe</p>
                 </div>
+
                 <div class="inp-form">
                     <label for="">Email</label>
                     <input type="email"  id="email" name="email">
@@ -51,27 +94,32 @@
                 </div>
                 <div class="inp-form">
                     <label for="">Tél</label>
-                    <input type="tel" id="name" name="tel">
+                    <input type="tel" id="tel" name="tel">
                     <span class="exlama" id="texlama"><i class="fa-solid fa-circle-exclamation"></i></span>
                     <span class="check" id="tcheck"><i class="fa-solid fa-circle-check"></i></span>
                     <p class="erore" id="terore">Please Enter votre tel</p>
+                   
                 </div>
                 <div class="inp-form">
                     <label for="">Enter votre journèe de permanence</label>
-                    <input type="date" id="day" name="day">
+                    <input type="date" id="day" name="date">
                     <span class="exlama" id="tyexlama"><i class="fa-solid fa-circle-exclamation"></i></span>
                     <span class="check" id="tycheck"><i class="fa-solid fa-circle-check"></i></span>
                     <p class="erore" id="tyerore">Please Enter (jour/nuit)</p>
                 </div>
                 <div class="inp-form">
                     <label for="">adresse</label>
-                    <input type="text" id="adrs" name="day">
+                    <input type="text" id="adrs" name="address">
                     <span class="exlama" id="aexlama"><i class="fa-solid fa-circle-exclamation"></i></span>
                     <span class="check" id="acheck"><i class="fa-solid fa-circle-check"></i></span>
                     <p class="erore" id="aerore">Please Enter adresse</p>
                 </div>
                 <input type="submit" value="submite"  class="btn1" id="btn">
             </form>
+           
+
+
+
             <div class="congo" id="congo">
                 <i class="fa-solid fa-check"></i>
                 <h1>congratulations</h1>

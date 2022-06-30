@@ -131,7 +131,7 @@ five.addEventListener("keyup", function(){
 
 
 // // validate form
-// function validate(){
+function validate(){
     
     if((one1.value.length == 0 || one1.value.length < 3)){
         let chek = document.getElementById("check")
@@ -181,3 +181,4 @@ five.addEventListener("keyup", function(){
     }
 
 
+}

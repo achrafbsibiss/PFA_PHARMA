@@ -17,30 +17,30 @@ body
      font-family: 'Poppins', sans-serif;
 }
 /* heaer */
+
+
 header
 {
     display: flex;
     width: 100%;
-    background-color: #EFEFEF;
+    background-color:#DBFFD8;
     color:#0A9047;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    padding: 0px 50px ;
+    padding: 20px 50px ;
     z-index: 99999;
+    position: sticky;
+    top: 0px;
 }
 .Alllogo
 {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
-.logo1
+header img
 {
-    width: 53px;
-    height: 54px;
-    border-radius: 50%;
-    background: #32B4C2;
+    width: 50px;
 }
 .logo2
 {
@@ -64,6 +64,7 @@ header
 {
     color:#313233;
     text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     position: relative;
     font-weight: 400;
@@ -82,7 +83,7 @@ header ul li a::before
     height: 4px;
     background-color: #0A9047;
     left: 0px;
-    bottom: -38px;
+    bottom: -30px;
     transition: all 0.3s ease-in ;
 }
 header ul li a:hover::before
@@ -103,6 +104,7 @@ header ul li a:hover::before
 @media (max-width:867px) {
     header
     {
+        width: 100%;
         position: relative;
     }
     .nav-link{
@@ -115,12 +117,12 @@ header ul li a:hover::before
         right:0%;
         width: 100%;
         height: 86vh;
-        background-color: #EFEFEF;
+        background-color:#DBFFD8;
         transition: all 0.4s ease-in ;
     } 
     .nav-link.active
     {
-        top:80px;
+        top:70px;
     }
     .burger
     {
@@ -128,11 +130,11 @@ header ul li a:hover::before
     }
     .burger.one :nth-child(1)
     {
-        transform: translateY(14px) rotate(48deg);
+        transform: translateY(8px) rotate(48deg);
     }
     .burger.one :nth-child(3)
     {
-        transform: translateY(-13px) rotate(-48deg);
+        transform: translateY(-10px) rotate(-48deg);
     }
     .burger.one :nth-child(2)
     {
@@ -157,14 +159,6 @@ header ul li a:hover::before
 @media (max-width:600px) {
     header
 {
-    display: flex;
-    width: 100%;
-    /* background-color: #1B1717; */
-    color: white;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 10px 50px ;
     z-index: 99999;
 }
     .Alllogo
@@ -182,19 +176,16 @@ header ul li a:hover::before
 }
     
 }
-@media (max-width:400px) {
+@media (max-width:480px) {
     .logo2{
-        font-size: 18px;
+        display: none;
     }
-.logo1
-{
-    width: 33px;
-    height: 34px;
-    border-radius: 50%;
-    background: #32B4C2;
 }
-    
-}
+
+
+
+
+
 /* fin stylin header */
 /* ################ */
 /* section one */
@@ -343,3 +334,109 @@ header ul li a:hover::before
     }
 }
 /* fin section two */
+/* fin styling section four */
+/* ################ */
+/* footer */
+footer
+{
+    width: 100%;
+    background-color: #EFEFEF;
+    color: var(--textcolor);
+    padding: 20px 60px;
+}
+footer h1
+{
+    margin-left: 90px;
+}
+.tous
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 90px;
+}
+.tous ul li
+{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.tous ul li a
+{
+    text-decoration: none;
+    color: var(--textcolor);
+}
+footer p
+{
+    text-align: center;
+}
+@media (max-width:700px) {
+    .tous
+    {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content:space-between;
+        align-items: center;
+        margin: 10px 20px;
+    }
+    footer
+    {
+        padding: 20px 20px;
+    }
+    .tous ul{
+        margin-bottom: 20px;
+    }
+        
+    }
+    @media (max-width:500px) {
+    
+    footer h1
+    {
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    }
+    @media (max-width:550px) {
+        .zizo h1
+    {
+        font-size: 20px;
+    }
+    .thh2 h1
+    {
+        font-size: 20px;
+    }
+    .thh2
+    {
+        max-width: 200px;
+        margin: 10px auto;
+    }
+    }
+    .congo
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
+    .congo i
+    {
+        margin-bottom: 20px;
+        border: 3px solid gray;
+        padding: 80px 80px;
+        border-radius: 50%;
+        font-size: 50px;
+        color:var(--maincolor);
+    }
+    .congo h1
+    {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0em;
+    }
+    .congo p
+    {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    }

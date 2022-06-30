@@ -8,7 +8,7 @@
 
 <header>
     <div class="Alllogo">
-        <span class="logo1"></span>
+        <img src="{{url_for('static',filename='image/logo_test_1.png')}}" alt="">
         <h1 class="logo2">Pharma network</h1>
     </div>
     <ul class="nav-link" id="one">
@@ -35,6 +35,47 @@
     </div>
 </section>
 <script src="{{url_for('static',filename='js/clientjs.js')}}"></script>
+
+
+
+{% for row in rows %}  
+
+
+    <div class="pharma">
+        <img src="./card.jpeg" alt="">
+          
+        <h1>{{row["name"]}}</h1>
+        <h2>{{row["address"]}}</h2>
+        <p>Téléphone : <span>{{row["tel"]}}</span></p>
+        <p>ville :<span>agadir</span></p>
+        <h4>Ouvert toute la journée {{row["date"]}}</h4>
+        <a href="">More info</a>
+    </div>
+
+{% endfor %}  
+
+
+
+<footer>
+    <h1>pharmanetwork</h1>
+    <div class="tous">
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about us</a></li>
+            <li><a href="">our services</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+        <ul>
+            <li> <a href=""> Resouces</a></li>
+            <li> <a href="">Terms Of Service</a></li>
+            <li> <a href="">Privacy Policy</a> </li>
+        </ul>
+    </div>
+    <p>© 2022 pharmanetwork</p>
+</footer>
+
+       
+
 
 {% endblock %}
 
